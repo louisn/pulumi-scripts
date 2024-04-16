@@ -9,7 +9,7 @@ This script helps you convert AWS CloudFormation resources into Pulumi code in b
 ### Prerequisites:
 - an AWS account with sufficient privilege,
 - AWS CLI latest version installed,
-- Pulumi cli installed.
+- Pulumi CLI installed.
 - `jq` installed
 
 ### Limitations:
