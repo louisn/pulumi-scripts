@@ -1,6 +1,11 @@
 # pulumi-scripts
-Pulumi utility scripts
+
+A collection of utility scripts for working with Pulumi.
+
 ## convert-cf-to-pulumi-bulk.sh
+
+This script helps you convert AWS CloudFormation resources into Pulumi code in bulk.
+
 ### Prerequisites:
 - an AWS account with sufficient privilege,
 - AWS CLI latest version installed,
@@ -9,16 +14,17 @@ Pulumi utility scripts
 
 ### Limitations:
 
-Currently only a small set of Pulumi type mappings are included.  See the script for details.
+Currently supports a limited set of AWS resource to Pulumi type mappings. 
+Please refer to the script for the currently supported mappings.
 
 ### Usage:
 
-./convert-cf-to-pulumi-bulk.sh
+    ./convert-cf-to-pulumi-bulk.sh
 
 ### Result:
 
-pulumi_import.json
+    pulumi_import.json
 
 ### Importing:
 
-pulumi import -f pulumi_import.json
+    pulumi import -f pulumi_import.json
